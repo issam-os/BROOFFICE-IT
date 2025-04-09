@@ -1,6 +1,7 @@
 {
   "name": "brooffice-it",
   "version": "1.0.0",
+  "homepage": "https://broofficeit20.netlify.app"
   "description": "An app for books and IT tools",
   "main": "src/index.js",
   "scripts": {
