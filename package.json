@@ -1,8 +1,8 @@
 {
-  "name": "brooffice-it",
+  "name": "BROOFFICE-IT",
   "version": "1.0.0",
-  "description": "An app for books and IT tools",
-  "main": "src/index.js",
+  "description": "BROOFFICE IT - A web application for discovering popular books and IT tools",
+  "main": "src/main.jsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -31,7 +31,14 @@
       "last 1 safari version"
     ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "books",
+    "IT",
+    "React",
+    "Vite",
+    "Tailwind",
+    "BROOFFICE"
+  ],
+  "author": "Issam Bouyoussef",
+  "license": "MIT"
 }
