@@ -1,21 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './screens/Home';
-import Books from './screens/Books';
-import ITTools from "./screens/ITTools";
-import Navbar from "./components/Navbar";
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Books from './pages/Books'
+import Tools from './pages/Tools'
+import Footer from './components/Footer'
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Navbar />
+    <>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/books" element={<Books />} />
-        <Route path="/it-tools" element={<ITTools />} />
+        <Route path="/tools" element={<Tools />} />
       </Routes>
-    </Router>
-  );
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
