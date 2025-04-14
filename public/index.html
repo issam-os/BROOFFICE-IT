@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BROOFFICE IT</title>
-    <link rel="icon" href="/logo.png" />
-  </head>
-  <body class="bg-background">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to BROOFFICE IT</h1>
+    </header>
+
+    <section>
+        <h2>Books Library</h2>
+        <ul>
+            <li><strong>Zero to One:</strong> Peter Thiel</li>
+            <li><strong>The Phoenix Project:</strong> Gene Kim</li>
+            <li><strong>Clean Code:</strong> Robert C. Martin</li>
+            <li><strong>Sapiens:</strong> Yuval Noah Harari</li>
+            <li><strong>The Pragmatic Programmer:</strong> Andrew Hunt & David Thomas</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>IT Tools</h2>
+        <ul>
+            <li><strong>Visual Studio Code:</strong> Code editor for developers</li>
+            <li><strong>Docker:</strong> Containerization platform</li>
+            <li><strong>Postman:</strong> API testing tool</li>
+            <li><strong>GitHub:</strong> Version control and collaboration platform</li>
+            <li><strong>Slack:</strong> Communication tool for teams</li>
+        </ul>
+    </section>
+</body>
 </html>
