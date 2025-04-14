@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BROOFFICE IT - Home</title>
+    <title>BROOFFICE IT</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,6 +20,16 @@
         main {
             padding: 20px;
             text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            margin-top: 0;
         }
         input[type="text"] {
             padding: 10px;
@@ -38,6 +48,21 @@
         button:hover {
             background-color: #0056b3;
         }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -45,11 +70,48 @@
         <h1>Welcome to BROOFFICE IT</h1>
     </header>
     <main>
-        <h2>Search for Books or IT Tools</h2>
-        <form action="results.html" method="GET">
-            <input type="text" name="query" placeholder="Type your search...">
-            <button type="submit">Search</button>
-        </form>
+        <!-- Homepage Section -->
+        <section>
+            <h2>Search for Books or IT Tools</h2>
+            <form action="#results">
+                <input type="text" name="query" placeholder="Type your search...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results">
+            <h2>Your Search Results</h2>
+            <ul>
+                <li><a href="#book1">Zero to One by Peter Thiel</a></li>
+                <li><a href="#book2">The Phoenix Project by Gene Kim</a></li>
+                <li><a href="#tool1">Visual Studio Code</a></li>
+                <li><a href="#tool2">Docker</a></li>
+            </ul>
+        </section>
+
+        <!-- Details Section -->
+        <section id="book1">
+            <h2>Zero to One</h2>
+            <p><strong>Author:</strong> Peter Thiel</p>
+            <p><strong>Description:</strong> A groundbreaking book on innovation and entrepreneurship.</p>
+        </section>
+
+        <section id="book2">
+            <h2>The Phoenix Project</h2>
+            <p><strong>Author:</strong> Gene Kim</p>
+            <p><strong>Description:</strong> A novel about IT and DevOps transformation.</p>
+        </section>
+
+        <section id="tool1">
+            <h2>Visual Studio Code</h2>
+            <p><strong>Description:</strong> A versatile and lightweight code editor for developers.</p>
+        </section>
+
+        <section id="tool2">
+            <h2>Docker</h2>
+            <p><strong>Description:</strong> A powerful containerization platform for software deployment.</p>
+        </section>
     </main>
 </body>
 </html>
